@@ -1,0 +1,56 @@
+'number' + 3 + 3
+Result: 'number33', str // concatenation of str and numbers brings str
+
+null + 3
+Result: 3, number // null converted to 0 and addition of 0 and 3 brings 3
+
+5 && "qwerty"
+Result: qwerty, true // both 5 and "qwerty" values are true, last one goes in result
+
++'40' + +'2' + "hillel";
+Result: '42hillel', str // '40' converted to number with +, '2' converted to number with +, 40 + 2 gives 42, then concatenation brings str
+
+'10' - 5 === 6;
+Result: false, bool // '10' str automatically converted to number 10, than math operation 10 - 5 brings 5, and 5 doesn't equel to 6
+
+true + false
+Result: 1, number // true converted to 1; false converted to 0; addition brings 1 (just amazing :))
+
+'4px' - 3
+Result: NaN // impossible to do math operation with str including letters
+
+'4' - 3
+Result: 1, number // '4' converted to number and then 3 is substracted
+
+'6' + 3 ** 0;
+Result: '61', str // 3 ** 0 == 1; concatenation brings str '61'
+
+12 / '6'
+Result: 2, number // '6' automatically converted to number and math operation brings 2
+
+'10' + (5 === 6);
+Result: 10false, str // (5 === 6) gives false and concatenation brings str
+
+null == ''
+Result: false, boolean // null is not the same as just empty field, null is emptiness that declared
+
+3 ** (9 / 3);
+Result: 27, number // action in brackets goes ahead and gives 3; then 3 ** 3 brings 27
+
+!!'false' == !!'true'
+Result: true, boolean // str with some values considered as true, so each 'false' and 'true' gives true, operator !! brings str to boolean, so true will be equeal true
+
+0 || '0' && 1
+Result: 1, number // str '0' considered as true or 1, both condition are true what required for && operand; for operand || one condition should be true, so comparision brings true; 1 as the last value is in result 
+
+(+null == false) < 1;
+Result: false, boolean // +null gives 0, so expression (+null == false) brings true, so left part equeals 1, not less
+
+false && true || true
+Result: true, boolean // left part considered to false, then operand || allows to set true because of true value in the right part
+
+false && (false || true);
+Result: false, boolean  //  part in brackets considered as true, operand requiers both parts to be equeal, so will be false
+
+(+null == false) < 1 ** 5;
+Result: false, boolean // +null gives 0, so expression (+null == false) brings true; 1 ** 5 gives 1; so left part equeals 1, not less
