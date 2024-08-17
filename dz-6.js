@@ -6,6 +6,7 @@ function checkYuliaTheory(count) {
     let isOddCount = 0;
     let evenPercentage = 0; 
     let oddPercentage = 0; 
+    let evenToOddPercenatge = 0;
 
     for (let i = 0; i < count; i++) { 
         let randomNumber = Math.floor(Math.random() * (maxNum - minNum + 1)); 
@@ -13,14 +14,13 @@ function checkYuliaTheory(count) {
             isEvenCount++;
         } else {
             isOddCount++;
-
         }
     }
-
     evenPercentage = Math.floor((isEvenCount / count) * 100);
     oddPercentage = Math.floor((isOddCount / count) * 100);
+    evenToOddPercenatge = Math.floor((isEvenCount / isOddCount) * 100);
     console.log("Total numbers:", count + "\nEven count:", isEvenCount, "Even percentage:", evenPercentage +"%\nOdd count:",
-        isOddCount, "Odd percentage:", oddPercentage +"%");
+        isOddCount, "Odd percentage:", oddPercentage +"%\nEven to odd percenatge:", evenToOddPercenatge);
 }
 
 checkYuliaTheory(11);
