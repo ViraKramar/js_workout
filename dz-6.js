@@ -1,6 +1,6 @@
 function checkYuliaTheory(count) {
 
-	let minNum = 1000;
+    let minNum = 1000;
     let maxNum = 10000;
     let isEvenCount = 0;
     let isOddCount = 0;
